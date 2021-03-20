@@ -1,4 +1,6 @@
-# Practice
+# Web Development
 
-This is to make my hands dirty with GitHub and programming.
-I am JESSU SHIRISH KUMAR. I am an IIT - CSE graduate with a GPA of 8.6.
+Hi. My name is Jessu Shirish Kumar. I am a computer science graduate from IIT Hyd.
+I have a year of experience as a web developer.
+I am comfortable in using technologies like HTML, CSS and JS.
+
