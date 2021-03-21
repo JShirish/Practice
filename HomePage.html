@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practising Header | Using Floats</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+        /*Universal*/
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /*Global styles*/
+        body {
+            font-family: 'Rubik','Open sans','Raleway', Helvetica, sans-serif;
+            background-color: #f8f8f8;
+            color: #03163a;
+        }
+
+        .container {
+            max-width: 85vw;
+            margin: auto;
+        }
+
+        a.topic-btn {
+            display: block;
+            width: max-content;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px;   
+            background-color: #fff;
+            color: #4285f4;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        a.topic-btn:hover {
+            background-color: #34a853;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /*Header Tab*/
+        header {
+            /*background-color: #4285f4;*/
+            min-height: 12vh;
+            /*border-bottom: 2px solid #34a853 ;*/
+        }
+
+        /*Header's Logo Div*/
+        header .container #logo {
+            margin-top: 8px;
+            float: left;
+        }
+
+        header .container #logo img {
+            max-width: auto;
+            max-height: 10vh;
+        }
+        
+
+
+
+        /*Navigation bar*/
+        header .container nav {
+            float: right;
+            margin-top: 20px;
+        }
+        header .container nav ul {
+            list-style-type: none;
+        }
+        header .container nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        header .container nav ul li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            display: block;
+            background-color: #4285f4;
+            color: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            
+        }
+        header .container nav ul li a:hover {
+            background-color: #34a853;
+            border: 2px solid #4285f4;
+            transition: 0.5s;
+        }
+
+
+        /*Wave Container section is incomplete*/
+        #wave-container{
+            position: relative;
+            min-height: 95vh;  
+            clear:both;
+        }
+        #wave-container #main-content {
+            width: auto;
+            float: left;
+            margin-top: 60px;
+            margin-left: 50px;
+        }
+        #wave-container  #main-content h1 {
+            font-size: 50px;
+            line-height: 1.2;
+            letter-spacing: 0.3px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+        #wave-container  #main-content p {
+            font-size: 25px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        #wave-container  #main-content ul{
+            padding-left: 50px;
+        }
+        #wave-container  #main-content ul li {
+            color: #fff;
+            font-size: large;
+            margin-bottom: 5px;
+        }
+        #wave-container #main-img {
+            width: 40%;
+            margin-top: 0px;
+            float: right;
+        }
+        #wave-container #main-img img {
+            width: 100%;
+        }
+        /*
+        #wave-container img {
+            float: right; 
+            margin-right: 8vw; 
+            margin-top: 0vh;
+        }
+        */
+
+        #wave-container > svg{
+            position: absolute;
+            bottom: 0px;
+            display: block;
+        }
+
+        /*Container for video explaination.*/
+        h2#video-heading {
+            text-align: center;
+            padding: 10px;
+            letter-spacing: 0.7px;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        #video-explaination {
+            max-width: 50%;
+            margin: auto;
+            margin-bottom: 100px;
+            background-color: #fff;
+            border: 3px solid #e2e2e2;
+            padding: 6px;
+        }
+        /*
+        #video-explaination h3{
+            color: #051024;
+            text-align: center;
+            padding: 10px;
+            letter-spacing: 0.7px;
+            font-size: 26px;
+            border-bottom: 2px solid #8d8b8b;
+        }*/
+
+
+
+        /*Box-sections of those images*/
+        #box-section {
+            width:80%;
+            margin: auto;
+            /*display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 40px;*/
+        }
+        #box-section .box {
+            float: left;
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            margin-right: 40px;
+        }
+        #box-section .box img {
+            max-width: 250px;
+            max-height: auto;
+        }
+        #box-section .box h2 {
+            margin-top:20px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        #box-section .box p {
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /*Footer*/
+        footer {
+            clear: both;
+            height: 10vh;
+            background-color: #4285f4;
+            color: #fff;
+            text-align: center;
+            font-weight: 600;
+        }
+        footer p {
+            padding: 30px;
+        }
+    
+        
+        @media(max-width:768px){
+            header .container .logo,
+            header .container  nav,
+            #box-section .box{
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            h2#video-heading {
+            text-align: center;
+            padding: 10px;
+            letter-spacing: 0.7px;
+            font-size: 20px;
+        }
+            #video-explaination {
+            max-width: 90%;
+            margin: auto;
+        }
+          #video-explaination iframe {
+              max-height: 200px;
+          }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+  <div style="background-color: #4285f4;">
+    <header>
+      <div class="container">
+        <div id="logo">
+          <a href="#"><img src="./FinalLogo2.jpg" alt="" style="border-radius: 30px;"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#topic-selection">Tutorials</a></li>
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </nav>
+      </div>  
+    </header>
+
+    <!--This wave container section is incomplete-->
+    <div id="wave-container">
+        <div class="container" > <!--style="border: 1px solid black; overflow: auto;">-->
+            <div id="main-content" ><!--</div>style="border: 1px solid red;">-->
+                <h1> Master Concepts of Physics</h1>
+                <p> With expert to guide you, crack the following with ease!</p>
+                <ul>
+                    <li>IIT-JEE Advanced</li>
+                    <li>IIT-JEE Mains</li>
+                    <li>Physics Olympiad</li>
+                    <li>NEET Physics</li>
+                </ul>
+                <a class="topic-btn" href="#topic-selection">  START LEARNING</a>
+            </div>
+            <div id="main-img"><!--</div> style="border: 1px solid green;">-->
+                <img src="./Coach_Isometric.png" alt="">
+            </div>
+        </div>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#f8f8f8" fill-opacity="1" d="M0,224L80,192C160,160,320,96,480,101.3C640,107,800,181,960,202.7C1120,224,1280,192,1360,176L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+    </div>
+    <!--This wave container section is incomplete-->
+  </div>
+  
+  <div>
+      <h2 id="video-heading">Watch a video and solve a difficult problem with ease.</h2>
+      <div id="video-explaination">
+        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/HiGlJ6JVRac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+    
+    <div id="topic-selection" style="width: 50vw; margin: auto; border: 2px solid #e2e2e2; background-color: #fff; padding: 30px; margin-bottom: 100px;">
+        <section  >
+            <h1 style="font-size: 30px;text-align: center; margin-bottom: 20px;"> Select a topic and start learning!</h1>
+            <div style="display: flex; flex-wrap: wrap;">
+                <a class="topic-btn" href="mechanics.html">MECHANICS</a>
+                <a class="topic-btn" href="mechanics.html">Heat & Thermodynamics</a>
+                <a class="topic-btn" href="mechanics.html">Oscillation & Waves</a>
+                <a class="topic-btn" href="mechanics.html">Gravitation</a>
+                <a class="topic-btn" href="mechanics.html">Electrostatics</a>
+                <a class="topic-btn" href="mechanics.html">Electric Current & Circuits</a>
+                <a class="topic-btn" href="mechanics.html">Magnetic Effects</a>
+                <a class="topic-btn" href="mechanics.html">Optics</a>
+                <a class="topic-btn" href="mechanics.html">Modern Physics</a>
+                <a class="topic-btn" href="mechanics.html">Semiconductors</a>
+                <a class="topic-btn" href="mechanics.html">Communication Systems</a>
+            </div>
+            
+        </section>
+    </div>
+    
+
+    <section id="box-section" style="overflow: auto;">
+      <div class="box">
+        <img src="./MasterConcepts.png" alt="">
+        <h2>Physics through Solved Problems</h2>
+        <p>The best way to clear concepts of physics is by solving problems. Our video lectures of solved problems cover various levels from different books.</p>
+      </div>
+        
+      <div class="box">
+        <img src="./RightGuidance.png" alt="">
+        <h2>Right guidance to reach your goals faster.</h2>
+        <p>With several years of experience, we provide right guidance for aspirants to clear IIT-JEE Advanced, IIT-JEE Mains and Physics Olympiad.</p>
+      </div>
+
+      <div class="box">
+        <img src="./GradedApproach.png" alt="">
+        <h2>Graded Approach to gain confidence.</h2>
+        <p>With our Graded Approach, you gain momemtum in solving problems and would feel confidence of ranking higher.</p>
+      </div>      
+    </section>
+
+    <footer>
+        <p>PHYSICS SIR JEE, Copyright&copy; 2021</p>
+    </footer>
+    
+</body>
+</html>
